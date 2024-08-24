@@ -71,6 +71,9 @@ function App() {
   let[text,setText]=useState('')
   let[todo,setTodo]=useState([])
   function submit(e){
+    if (!inp.value) {
+      return
+    }
 e.preventDefault()
 setTodo([...todo])
 // todo.push()
