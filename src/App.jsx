@@ -71,21 +71,25 @@ function App() {
   let[text,setText]=useState('')
   let[todo,setTodo]=useState([])
   function submit(e){
-    if (!inp.value) {
-      return
-    }
+    
 e.preventDefault()
 setTodo([...todo])
 // todo.push()
 console.log(todo)
   }
   function change(){
-    const inp=document.querySelector("#inp")
-todo.push(inp.value)
-// console.log(setText)
-console.log(inp.value)
-inp.value=''
-// text(inp.value)
+    if (!inp.value) {
+      return
+    }
+    else{
+
+      const inp=document.querySelector("#inp")
+  todo.push(inp.value)
+  // console.log(setText)
+  console.log(inp.value)
+  inp.value=''
+  // text(inp.value)
+    }
 
 
   }
@@ -96,7 +100,8 @@ setTodo([...todo])
   }
   function editTodo(index){
 let editVal=prompt('Enter edit value')
-todo[index]=editVal
+// todo[index]=editVal
+todo.splice(index,1,editVal)
 console.log(todo);
 
 setTodo([...todo])
