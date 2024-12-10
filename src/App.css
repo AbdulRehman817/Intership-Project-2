@@ -1,0 +1,147 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0e0e0, #f8f8f8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 18px 25px;
+  border: none;
+  border-radius: 50px;
+  width: 75%;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #d43f52;
+  box-shadow: 0 6px 12px rgba(212, 63, 82, 0.3);
+}
+
+button {
+  padding: 14px 30px;
+  background-color: #d43f52;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+}
+
+button:hover {
+  background-color: #a6364b;
+  transform: scale(1.1);
+}
+
+/* List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+li {
+  background-color: #fff;
+  padding: 18px;
+  margin: 15px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+li span {
+  font-size: 1.15rem;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+li button {
+  padding: 10px 18px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #d43f52;
+  color: #d43f52;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #d43f52;
+  color: white;
+  border-color: #d43f52;
+  transform: scale(1.05);
+}
+
+li button:nth-child(2) {
+  background-color: transparent;
+  border-color: #4caf50;
+  color: #4caf50;
+}
+
+li button:nth-child(2):hover {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+li button:active {
+  transform: scale(0.98);
+}
+
+/* Button Glow Effect */
+button:focus,
+li button:focus {
+  outline: none;
+  box-shadow: 0 0 8px 4px rgba(212, 63, 82, 0.2);
+}
+.value {
+  color: #4caf50;
+  font-size: 20px;
+}
